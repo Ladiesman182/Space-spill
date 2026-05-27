@@ -28,11 +28,55 @@ def draw_bg():
     screen.blit(bg, (0, 0))
 
 
+# Colors
+BG_COLOR = (30, 30, 30)
+BUTTON_COLOR = (70, 130, 180)
+HOVER_COLOR = (100, 170, 220)
+TEXT_COLOR = (255, 255, 255)
+
+# Font
+font = pygame.font.SysFont(None, 36)
+
+# Button class
+class Button:
+    def __init__(self, text, x, y, w, h):
+        self.text = text
+        self.rect = pygame.Rect(x, y, w, h)
+
+    def draw(self, surface):
+        color = HOVER_COLOR if self.rect.collidepoint(pygame.mouse.get_pos()) else BUTTON_COLOR
+        pygame.draw.rect(surface, color, self.rect)
+        pygame.draw.rect(surface, (0, 0, 0), self.rect, 2)
+
+        text_surf = font.render(self.text, True, TEXT_COLOR)
+        text_rect = text_surf.get_rect(center=self.rect.center)
+        surface.blit(text_surf, text_rect)
+
+    def clicked(self, event):
+        return (
+            event.type == pygame.MOUSEBUTTONDOWN
+            and event.button == 1
+            and self.rect.collidepoint(event.pos)
+        )
+
+# Create buttons
+buttons = [
+    Button("Play", 200, 120, 200, 50),
+    Button("Options", 200, 190, 200, 50),
+    Button("Quit", 200, 260, 200, 50)
+]
+
+
+
+
+
+
+
 
 
 # Klasse for spillerens romskip
 class Spaceship(pygame.sprite.Sprite):
-    def __init__(self, x, y, health, lives): # LAger skipet på spillet 
+    def __init__(self, x, y, health, lives): # Lager skipet på spillet 
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.image.load("img/spaceship.png")
         self.rect = self.image.get_rect()
@@ -115,6 +159,16 @@ while run:
         if event.type == pygame.QUIT:
             run = False
 
+
+    
+    for button in buttons:
+            if button.clicked(event):
+                print(f"{button.text} clicked!")
+
+                if button.text == "Quit":
+                    pygame.quit()
+                    sys.exit()
+
     # update spaceship
     spaceship.update()
 
@@ -124,6 +178,12 @@ while run:
     # tegne sprite grupper
     Spaceship_group.draw(screen)
     bullet_group.draw(screen)
+
+    for button in buttons:
+        button.draw(screen)
+    
+
+
 
     pygame.display.update()
 
