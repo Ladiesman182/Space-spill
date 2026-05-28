@@ -24,6 +24,7 @@ green = (0, 255, 0)
 # Laster inn bakgrunnsbildet fra img-mappen
 bg = pygame.image.load("img/bg.png") 
 
+
 title = pygame.image.load("img/Invaders in space.png")
 
 title = pygame.transform.scale(title,(540,270))
@@ -162,7 +163,8 @@ run = True
 while run:
     clock.tick(fps)
     draw_bg()
-    draw_title()
+    if game_state == "menu":
+        draw_title()
     
 
     for event in pygame.event.get():
