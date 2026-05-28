@@ -24,11 +24,16 @@ green = (0, 255, 0)
 # Laster inn bakgrunnsbildet fra img-mappen
 bg = pygame.image.load("img/bg.png") 
 
+title = pygame.image.load("img/Invaders in space.png")
 
+title = pygame.transform.scale(title,(540,270))
 
 # Funksjon som tegner bakgrunnen på skjermen
 def draw_bg():
     screen.blit(bg, (0, 0))
+
+def draw_title():
+    screen.blit(title, (35, 0))    
 
 
 # Colors
@@ -157,6 +162,8 @@ run = True
 while run:
     clock.tick(fps)
     draw_bg()
+    draw_title()
+    
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
