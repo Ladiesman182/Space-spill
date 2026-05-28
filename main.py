@@ -1,5 +1,8 @@
 import pygame
 from pygame.locals import *
+import sys
+
+game_state = "menu"  # "menu" eller "playing" 
 
 pygame.init()
 
@@ -61,9 +64,9 @@ class Button:
 
 # Create buttons
 buttons = [
-    Button("Play", 200, 120, 200, 50),
-    Button("Options", 200, 190, 200, 50),
-    Button("Quit", 200, 260, 200, 50)
+    Button("Play", 200, 300, 200, 50),
+    Button("Quit", 200, 370, 200, 50),
+    
 ]
 
 
@@ -159,31 +162,26 @@ while run:
         if event.type == pygame.QUIT:
             run = False
 
+        # Knappe-trykk håndteres inne i event-løkka
+        if game_state == "menu":
+            for button in buttons:
+                if button.clicked(event):
+                    if button.text == "Play":
+                        game_state = "playing"
+                    if button.text == "Quit":
+                        pygame.quit()
+                        sys.exit()
 
-    
-    for button in buttons:
-            if button.clicked(event):
-                print(f"{button.text} clicked!")
+    if game_state == "menu":
+        Spaceship_group.draw(screen)
+        for button in buttons:
+            button.draw(screen)
 
-                if button.text == "Quit":
-                    pygame.quit()
-                    sys.exit()
-
-    # update spaceship
-    spaceship.update()
-
-    # update bullets
-    bullet_group.update()
-
-    # tegne sprite grupper
-    Spaceship_group.draw(screen)
-    bullet_group.draw(screen)
-
-    for button in buttons:
-        button.draw(screen)
-    
-
-
+    elif game_state == "playing":
+        spaceship.update()
+        bullet_group.update()
+        Spaceship_group.draw(screen)
+        bullet_group.draw(screen)
 
     pygame.display.update()
 
