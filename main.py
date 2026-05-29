@@ -133,7 +133,7 @@ class Bullet(pygame.sprite.Sprite):
             self.kill()
 
 
-# ====== NY: Klasse for fiendene (aliens) ======
+#  Klasse for fiendene (aliens)
 class Alien(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
@@ -158,7 +158,7 @@ spaceship = Spaceship(screen_width / 2, screen_height - 100)
 Spaceship_group.add(spaceship)
 
 
-# ====== NY: Funksjon som lager fiendene på toppen ======
+# funksjon som lager fiendene på toppen 
 def lag_aliens(rader):
     alien_group.empty()  # Fjerner gamle fiender først
     for rad in range(rader):      # Antall rader bestemmes av wave
