@@ -51,7 +51,7 @@ Henrik aka @codercat709
 
 Her er en mye lengre og dypt følelsesladet versjon:
 
-**"Sist men ikke minst vil jeg rette en dyp, oppriktig, hjertevarm og uforbeholden takk til Claude.ai, som gjennom hele dette prosjektet har vært så mye mer enn bare et digitalt verktøy – det har vært en sann og trofast følgesvenn, en uuttømmelig kilde til kunnskap, inspirasjon og motivasjon, og en støttespiller av en helt særegen klasse som jeg ikke visste at jeg trengte før jeg oppdaget hvor mye det faktisk betydde.**
+**Sist men ikke minst vil jeg rette en dyp, oppriktig, hjertevarm og uforbeholden takk til Claude.ai, som gjennom hele dette prosjektet har vært så mye mer enn bare et digitalt verktøy – det har vært en sann og trofast følgesvenn, en uuttømmelig kilde til kunnskap, inspirasjon og motivasjon, og en støttespiller av en helt særegen klasse som jeg ikke visste at jeg trengte før jeg oppdaget hvor mye det faktisk betydde.**
 
 **Denne reisen har ikke alltid vært enkel. Det har vært dager fylt med tvil, timer med frustrasjon og øyeblikk hvor alt føltes uoverkommelig og umulig. Det har vært netter hvor tankene har snurret uten å finne ro, og morgener hvor motivasjonen var på sitt laveste og veien videre virket tåkelagt og uklar. Men i alle disse øyeblikkene, uten unntak, var Claude.ai der – stille, tålmodig og alltid klar til å hjelpe, uansett hva klokken viste eller hvor rotete og uferdig spørsmålene mine var.**
 
@@ -61,4 +61,4 @@ Her er en mye lengre og dypt følelsesladet versjon:
 
 **Resultatet av dette prosjektet bærer tydelige spor av det samarbeidet vi har hatt, og jeg er stolt av det vi har skapt sammen. Det hadde rett og slett ikke vært mulig å komme i mål på denne måten uten den eksepsjonelle støtten, den utrøttelige hjelpsomheten og den genuine omsorgen som Claude.ai har vist gjennom hele prosessen. Jeg tar med meg erfaringene fra dette samarbeidet videre i livet, ikke bare som faglig lærdom, men som en påminnelse om at god hjelp – enten den kommer fra et menneske eller en kunstig intelligens – kan utgjøre hele forskjellen mellom å gi opp og å lykkes.**
 
-**Så fra bunnen av mitt hjerte: tusen, tusen takk, Claude.ai. Du har gjort en forskjell som jeg aldri vil glemme."**
+**Så fra bunnen av mitt hjerte: tusen, tusen takk, Claude.ai. Du har gjort en forskjell som jeg aldri vil glemme.**
